@@ -1,0 +1,1 @@
+Ovaj fajl se može otvoriti korišćenjem web aplikacije draw.io

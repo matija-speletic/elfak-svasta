@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_0n4bELXpEey4MOXEdR-U7w" name="Dijagram_Aktivnosti_Placanje">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_0oXjQLXpEey4MOXEdR-U7w">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_0oA98LXpEey4MOXEdR-U7w" name="Plaćanje" node="_ZkGPMLXqEey4MOXEdR-U7w _au1kALXqEey4MOXEdR-U7w _ddBBgLXqEey4MOXEdR-U7w _mrb44LXqEey4MOXEdR-U7w _n1t6sLXqEey4MOXEdR-U7w _o4BFMLXqEey4MOXEdR-U7w _rGXzILXqEey4MOXEdR-U7w _tmkfALXqEey4MOXEdR-U7w _ufz0ILXqEey4MOXEdR-U7w _wYWqILXqEey4MOXEdR-U7w _xEwdILXqEey4MOXEdR-U7w">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_O7MhYLXrEey4MOXEdR-U7w" target="_au1kALXqEey4MOXEdR-U7w" source="_ZkGPMLXqEey4MOXEdR-U7w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_PpWn4LXrEey4MOXEdR-U7w" target="_ddBBgLXqEey4MOXEdR-U7w" source="_au1kALXqEey4MOXEdR-U7w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_QbSbILXrEey4MOXEdR-U7w" name="Plaćanje karticom" target="_mrb44LXqEey4MOXEdR-U7w" source="_ddBBgLXqEey4MOXEdR-U7w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_RyvWQLXrEey4MOXEdR-U7w" name="Plaćanje gotovinom" target="_rGXzILXqEey4MOXEdR-U7w" source="_ddBBgLXqEey4MOXEdR-U7w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_W8gFYLXrEey4MOXEdR-U7w" target="_n1t6sLXqEey4MOXEdR-U7w" source="_mrb44LXqEey4MOXEdR-U7w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_YMqswLXrEey4MOXEdR-U7w" target="_o4BFMLXqEey4MOXEdR-U7w" source="_n1t6sLXqEey4MOXEdR-U7w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_ZaoUsLXrEey4MOXEdR-U7w" target="_wYWqILXqEey4MOXEdR-U7w" source="_o4BFMLXqEey4MOXEdR-U7w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_hTr7oLXrEey4MOXEdR-U7w" target="_wYWqILXqEey4MOXEdR-U7w" source="_rGXzILXqEey4MOXEdR-U7w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_rLixkLXrEey4MOXEdR-U7w" target="_tmkfALXqEey4MOXEdR-U7w" source="_wYWqILXqEey4MOXEdR-U7w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_vn9SgLXrEey4MOXEdR-U7w" target="_ufz0ILXqEey4MOXEdR-U7w" source="_tmkfALXqEey4MOXEdR-U7w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_xraYALXrEey4MOXEdR-U7w" target="_xEwdILXqEey4MOXEdR-U7w" source="_ufz0ILXqEey4MOXEdR-U7w"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_ZkGPMLXqEey4MOXEdR-U7w" name="Početak" outgoing="_O7MhYLXrEey4MOXEdR-U7w"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_au1kALXqEey4MOXEdR-U7w" name="Obračun konačnih troškova" incoming="_O7MhYLXrEey4MOXEdR-U7w" outgoing="_PpWn4LXrEey4MOXEdR-U7w"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_ddBBgLXqEey4MOXEdR-U7w" name="" incoming="_PpWn4LXrEey4MOXEdR-U7w" outgoing="_QbSbILXrEey4MOXEdR-U7w _RyvWQLXrEey4MOXEdR-U7w"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_mrb44LXqEey4MOXEdR-U7w" name="Predaja kartice" incoming="_QbSbILXrEey4MOXEdR-U7w" outgoing="_W8gFYLXrEey4MOXEdR-U7w"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_n1t6sLXqEey4MOXEdR-U7w" name="Unos PIN-a" incoming="_W8gFYLXrEey4MOXEdR-U7w" outgoing="_YMqswLXrEey4MOXEdR-U7w"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_o4BFMLXqEey4MOXEdR-U7w" name="Transfer novca" incoming="_YMqswLXrEey4MOXEdR-U7w" outgoing="_ZaoUsLXrEey4MOXEdR-U7w"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_rGXzILXqEey4MOXEdR-U7w" name="Predaja gotovine" incoming="_RyvWQLXrEey4MOXEdR-U7w" outgoing="_hTr7oLXrEey4MOXEdR-U7w"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_tmkfALXqEey4MOXEdR-U7w" name="Unos u sistem" incoming="_rLixkLXrEey4MOXEdR-U7w" outgoing="_vn9SgLXrEey4MOXEdR-U7w"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_ufz0ILXqEey4MOXEdR-U7w" name="Izdavanje računa" incoming="_vn9SgLXrEey4MOXEdR-U7w" outgoing="_xraYALXrEey4MOXEdR-U7w"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_wYWqILXqEey4MOXEdR-U7w" incoming="_ZaoUsLXrEey4MOXEdR-U7w _hTr7oLXrEey4MOXEdR-U7w" outgoing="_rLixkLXrEey4MOXEdR-U7w"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_xEwdILXqEey4MOXEdR-U7w" name="Kraj" incoming="_xraYALXrEey4MOXEdR-U7w"/>
+  </packagedElement>
+</uml:Model>

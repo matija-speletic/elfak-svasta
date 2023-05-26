@@ -1,0 +1,1 @@
+Definisati niz karaktera. Broj elemenata je zapamćen na posebnoj 8-bitnoj lokaciji. Transformisati niz tako da svako slovo koje se nalazi neposredno iza blanko karaktera bude malo slovo. Sve pristupe elementima nizova u memoriji realizovati isključivo instrukcijama za rad s nizovima.

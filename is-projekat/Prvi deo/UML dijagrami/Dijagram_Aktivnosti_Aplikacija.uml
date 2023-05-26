@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_ijqQYLXYEey4MOXEdR-U7w" name="Dijagram_Aktivnosti">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_ikuAULXYEey4MOXEdR-U7w">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_ij3rwLXYEey4MOXEdR-U7w" name="Konfiguracija uređaja i aplikacije" node="_EcMe0LXeEey4MOXEdR-U7w _ionPkLXdEey4MOXEdR-U7w _gx93ALXdEey4MOXEdR-U7w _ZwEhkLXdEey4MOXEdR-U7w _-DlzcLXcEey4MOXEdR-U7w _8GploLXcEey4MOXEdR-U7w _vbWXsLXcEey4MOXEdR-U7w _qUxfcLXcEey4MOXEdR-U7w _oJ9NsLXcEey4MOXEdR-U7w _hvGDELXcEey4MOXEdR-U7w _f_LkoLXcEey4MOXEdR-U7w _eIESALXcEey4MOXEdR-U7w _WeClkLXcEey4MOXEdR-U7w _LwA8oLXcEey4MOXEdR-U7w _F2vcILXcEey4MOXEdR-U7w _wQ8_cLXbEey4MOXEdR-U7w _nxzB0LXbEey4MOXEdR-U7w _TV8BoLXbEey4MOXEdR-U7w _Rns-MLXbEey4MOXEdR-U7w _H5udALXbEey4MOXEdR-U7w">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_lp4oMLXdEey4MOXEdR-U7w" target="_Rns-MLXbEey4MOXEdR-U7w" source="_H5udALXbEey4MOXEdR-U7w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_nHGNELXdEey4MOXEdR-U7w" target="_TV8BoLXbEey4MOXEdR-U7w" source="_Rns-MLXbEey4MOXEdR-U7w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_oFThwLXdEey4MOXEdR-U7w" target="_nxzB0LXbEey4MOXEdR-U7w" source="_TV8BoLXbEey4MOXEdR-U7w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_pAfXoLXdEey4MOXEdR-U7w" target="_wQ8_cLXbEey4MOXEdR-U7w" source="_nxzB0LXbEey4MOXEdR-U7w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_qWYzkLXdEey4MOXEdR-U7w" target="_F2vcILXcEey4MOXEdR-U7w" source="_wQ8_cLXbEey4MOXEdR-U7w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_rPMq4LXdEey4MOXEdR-U7w" target="_LwA8oLXcEey4MOXEdR-U7w" source="_F2vcILXcEey4MOXEdR-U7w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_uW8e8LXdEey4MOXEdR-U7w" name="Paket sa ugovorom" target="_WeClkLXcEey4MOXEdR-U7w" source="_LwA8oLXcEey4MOXEdR-U7w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_4AOtYLXdEey4MOXEdR-U7w" target="_eIESALXcEey4MOXEdR-U7w" source="_WeClkLXcEey4MOXEdR-U7w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_5OlW4LXdEey4MOXEdR-U7w" name="Prepaid tarifa" target="_eIESALXcEey4MOXEdR-U7w" source="_LwA8oLXcEey4MOXEdR-U7w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_HH8TYLXeEey4MOXEdR-U7w" target="_EcMe0LXeEey4MOXEdR-U7w" source="_eIESALXcEey4MOXEdR-U7w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_OKZCcLXeEey4MOXEdR-U7w" name="Biometrijska auentifikacija" target="_hvGDELXcEey4MOXEdR-U7w" source="_EcMe0LXeEey4MOXEdR-U7w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_RLwhsLXeEey4MOXEdR-U7w" name="Standardna autentifikacija" target="_f_LkoLXcEey4MOXEdR-U7w" source="_EcMe0LXeEey4MOXEdR-U7w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_SKI1gLXeEey4MOXEdR-U7w" target="_vbWXsLXcEey4MOXEdR-U7w" source="_hvGDELXcEey4MOXEdR-U7w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_TIFrgLXeEey4MOXEdR-U7w" name="Andrioid" target="_oJ9NsLXcEey4MOXEdR-U7w" source="_vbWXsLXcEey4MOXEdR-U7w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_jtohcLXeEey4MOXEdR-U7w" name="Apple" target="_qUxfcLXcEey4MOXEdR-U7w" source="_vbWXsLXcEey4MOXEdR-U7w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_tfCxILXeEey4MOXEdR-U7w" target="_8GploLXcEey4MOXEdR-U7w" source="_oJ9NsLXcEey4MOXEdR-U7w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_ujsFALXeEey4MOXEdR-U7w" target="_8GploLXcEey4MOXEdR-U7w" source="_qUxfcLXcEey4MOXEdR-U7w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_6HTSILXeEey4MOXEdR-U7w" target="_-DlzcLXcEey4MOXEdR-U7w" source="_8GploLXcEey4MOXEdR-U7w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_7utU0LXeEey4MOXEdR-U7w" target="_-DlzcLXcEey4MOXEdR-U7w" source="_f_LkoLXcEey4MOXEdR-U7w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="__tZ_ALXeEey4MOXEdR-U7w" target="_ZwEhkLXdEey4MOXEdR-U7w" source="_-DlzcLXcEey4MOXEdR-U7w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BYp_4LXfEey4MOXEdR-U7w" target="_gx93ALXdEey4MOXEdR-U7w" source="_ZwEhkLXdEey4MOXEdR-U7w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_CMYi4LXfEey4MOXEdR-U7w" target="_ionPkLXdEey4MOXEdR-U7w" source="_gx93ALXdEey4MOXEdR-U7w"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_H5udALXbEey4MOXEdR-U7w" name="Početak konfiguracije" outgoing="_lp4oMLXdEey4MOXEdR-U7w"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Rns-MLXbEey4MOXEdR-U7w" name="Ubacivanje SIM kartice" incoming="_lp4oMLXdEey4MOXEdR-U7w" outgoing="_nHGNELXdEey4MOXEdR-U7w"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_TV8BoLXbEey4MOXEdR-U7w" name="Uključivanje uređaja" incoming="_nHGNELXdEey4MOXEdR-U7w" outgoing="_oFThwLXdEey4MOXEdR-U7w"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_nxzB0LXbEey4MOXEdR-U7w" name="Konfiguracija jezika" incoming="_oFThwLXdEey4MOXEdR-U7w" outgoing="_pAfXoLXdEey4MOXEdR-U7w"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_wQ8_cLXbEey4MOXEdR-U7w" name="Instalacija aplikacije" incoming="_pAfXoLXdEey4MOXEdR-U7w" outgoing="_qWYzkLXdEey4MOXEdR-U7w"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_F2vcILXcEey4MOXEdR-U7w" name="Povezivanje aplikacije sa brojem telefona" incoming="_qWYzkLXdEey4MOXEdR-U7w" outgoing="_rPMq4LXdEey4MOXEdR-U7w"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_LwA8oLXcEey4MOXEdR-U7w" name="Tarifa sa ugovorom?" incoming="_rPMq4LXdEey4MOXEdR-U7w" outgoing="_uW8e8LXdEey4MOXEdR-U7w _5OlW4LXdEey4MOXEdR-U7w"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_WeClkLXcEey4MOXEdR-U7w" name="Login preko kreiranog naloga" incoming="_uW8e8LXdEey4MOXEdR-U7w" outgoing="_4AOtYLXdEey4MOXEdR-U7w"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_eIESALXcEey4MOXEdR-U7w" name="" incoming="_4AOtYLXdEey4MOXEdR-U7w _5OlW4LXdEey4MOXEdR-U7w" outgoing="_HH8TYLXeEey4MOXEdR-U7w"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_f_LkoLXcEey4MOXEdR-U7w" name="Konfiguracija lozinke" incoming="_RLwhsLXeEey4MOXEdR-U7w" outgoing="_7utU0LXeEey4MOXEdR-U7w"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_hvGDELXcEey4MOXEdR-U7w" name="Konfiguracija biometrijske autentifikacije" incoming="_OKZCcLXeEey4MOXEdR-U7w" outgoing="_SKI1gLXeEey4MOXEdR-U7w"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_oJ9NsLXcEey4MOXEdR-U7w" name="Konfiguracija otiska prsta" incoming="_TIFrgLXeEey4MOXEdR-U7w" outgoing="_tfCxILXeEey4MOXEdR-U7w"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_qUxfcLXcEey4MOXEdR-U7w" name="Konfiguracija FaceID" incoming="_jtohcLXeEey4MOXEdR-U7w" outgoing="_ujsFALXeEey4MOXEdR-U7w"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_vbWXsLXcEey4MOXEdR-U7w" name="Tip uređaja" incoming="_SKI1gLXeEey4MOXEdR-U7w" outgoing="_TIFrgLXeEey4MOXEdR-U7w _jtohcLXeEey4MOXEdR-U7w"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_8GploLXcEey4MOXEdR-U7w" name="" incoming="_tfCxILXeEey4MOXEdR-U7w _ujsFALXeEey4MOXEdR-U7w" outgoing="_6HTSILXeEey4MOXEdR-U7w"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_-DlzcLXcEey4MOXEdR-U7w" name="" incoming="_6HTSILXeEey4MOXEdR-U7w _7utU0LXeEey4MOXEdR-U7w" outgoing="__tZ_ALXeEey4MOXEdR-U7w"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_ZwEhkLXdEey4MOXEdR-U7w" name="Povezivanje sa bazom podataka" incoming="__tZ_ALXeEey4MOXEdR-U7w" outgoing="_BYp_4LXfEey4MOXEdR-U7w"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_gx93ALXdEey4MOXEdR-U7w" name="Prikaz podataka" incoming="_BYp_4LXfEey4MOXEdR-U7w" outgoing="_CMYi4LXfEey4MOXEdR-U7w"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_ionPkLXdEey4MOXEdR-U7w" name="Kraj" incoming="_CMYi4LXfEey4MOXEdR-U7w"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_EcMe0LXeEey4MOXEdR-U7w" name="" incoming="_HH8TYLXeEey4MOXEdR-U7w" outgoing="_OKZCcLXeEey4MOXEdR-U7w _RLwhsLXeEey4MOXEdR-U7w"/>
+  </packagedElement>
+</uml:Model>

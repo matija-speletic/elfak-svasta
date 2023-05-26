@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_WZLPQLaCEeyf6IIJIlo-pA" name="Dijagram_Aktivnosti_ObnovaUgovora">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_WaL74LaCEeyf6IIJIlo-pA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_WZeKMLaCEeyf6IIJIlo-pA" name="Obnova ugovora" node="_u8Kc4LaCEeyf6IIJIlo-pA _TZ1T0LaDEeyf6IIJIlo-pA _WEqiYLaDEeyf6IIJIlo-pA _3jCWoLaDEeyf6IIJIlo-pA _-4qgYLaDEeyf6IIJIlo-pA _A6bj0LaEEeyf6IIJIlo-pA _DGtOILaEEeyf6IIJIlo-pA _Hrox4LaEEeyf6IIJIlo-pA _MCT3MLaEEeyf6IIJIlo-pA _NDrNkLaEEeyf6IIJIlo-pA _Qn2e8LaEEeyf6IIJIlo-pA _Skw3kLaEEeyf6IIJIlo-pA">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_oVGXYLaEEeyf6IIJIlo-pA" target="_TZ1T0LaDEeyf6IIJIlo-pA" source="_u8Kc4LaCEeyf6IIJIlo-pA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_pfcqoLaEEeyf6IIJIlo-pA" target="_WEqiYLaDEeyf6IIJIlo-pA" source="_TZ1T0LaDEeyf6IIJIlo-pA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_qy_WILaEEeyf6IIJIlo-pA" name="Ugovor istekao" target="_3jCWoLaDEeyf6IIJIlo-pA" source="_WEqiYLaDEeyf6IIJIlo-pA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_xAgBQLaEEeyf6IIJIlo-pA" name="Ugovor nije istekao" target="_Qn2e8LaEEeyf6IIJIlo-pA" source="_WEqiYLaDEeyf6IIJIlo-pA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_4w8ewLaEEeyf6IIJIlo-pA" target="_-4qgYLaDEeyf6IIJIlo-pA" source="_3jCWoLaDEeyf6IIJIlo-pA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_7eXHQLaEEeyf6IIJIlo-pA" name="Troškovi izmireni" target="_DGtOILaEEeyf6IIJIlo-pA" source="_-4qgYLaDEeyf6IIJIlo-pA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BKu0MLaFEeyf6IIJIlo-pA" name="Troškovi nisu izmireni" target="_A6bj0LaEEeyf6IIJIlo-pA" source="_-4qgYLaDEeyf6IIJIlo-pA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_EdN4oLaFEeyf6IIJIlo-pA" target="_Hrox4LaEEeyf6IIJIlo-pA" source="_DGtOILaEEeyf6IIJIlo-pA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_FUeQwLaFEeyf6IIJIlo-pA" target="_MCT3MLaEEeyf6IIJIlo-pA" source="_Hrox4LaEEeyf6IIJIlo-pA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_GGIXMLaFEeyf6IIJIlo-pA" target="_MCT3MLaEEeyf6IIJIlo-pA" source="_A6bj0LaEEeyf6IIJIlo-pA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_GywzsLaFEeyf6IIJIlo-pA" target="_NDrNkLaEEeyf6IIJIlo-pA" source="_MCT3MLaEEeyf6IIJIlo-pA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_HwWdULaFEeyf6IIJIlo-pA" target="_Qn2e8LaEEeyf6IIJIlo-pA" source="_NDrNkLaEEeyf6IIJIlo-pA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_JhTdkLaFEeyf6IIJIlo-pA" target="_Skw3kLaEEeyf6IIJIlo-pA" source="_Qn2e8LaEEeyf6IIJIlo-pA"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_u8Kc4LaCEeyf6IIJIlo-pA" name="Početak" outgoing="_oVGXYLaEEeyf6IIJIlo-pA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_TZ1T0LaDEeyf6IIJIlo-pA" name="Pribavljanje ugovora iz baze podataka" incoming="_oVGXYLaEEeyf6IIJIlo-pA" outgoing="_pfcqoLaEEeyf6IIJIlo-pA"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_WEqiYLaDEeyf6IIJIlo-pA" name="Provera statusa ugovora" incoming="_pfcqoLaEEeyf6IIJIlo-pA" outgoing="_qy_WILaEEeyf6IIJIlo-pA _xAgBQLaEEeyf6IIJIlo-pA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_3jCWoLaDEeyf6IIJIlo-pA" name="Obrada plaćenih računa" incoming="_qy_WILaEEeyf6IIJIlo-pA" outgoing="_4w8ewLaEEeyf6IIJIlo-pA"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_-4qgYLaDEeyf6IIJIlo-pA" name="Stanje troškova" incoming="_4w8ewLaEEeyf6IIJIlo-pA" outgoing="_7eXHQLaEEeyf6IIJIlo-pA _BKu0MLaFEeyf6IIJIlo-pA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_A6bj0LaEEeyf6IIJIlo-pA" name="Privremeno isključenje" incoming="_BKu0MLaFEeyf6IIJIlo-pA" outgoing="_GGIXMLaFEeyf6IIJIlo-pA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_DGtOILaEEeyf6IIJIlo-pA" name="Automatska obnova ugovora" incoming="_7eXHQLaEEeyf6IIJIlo-pA" outgoing="_EdN4oLaFEeyf6IIJIlo-pA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Hrox4LaEEeyf6IIJIlo-pA" name="Određivanje nove cene" incoming="_EdN4oLaFEeyf6IIJIlo-pA" outgoing="_FUeQwLaFEeyf6IIJIlo-pA"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_MCT3MLaEEeyf6IIJIlo-pA" name="" incoming="_FUeQwLaFEeyf6IIJIlo-pA _GGIXMLaFEeyf6IIJIlo-pA" outgoing="_GywzsLaFEeyf6IIJIlo-pA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_NDrNkLaEEeyf6IIJIlo-pA" name="Slanje obaveštenja klijentu" incoming="_GywzsLaFEeyf6IIJIlo-pA" outgoing="_HwWdULaFEeyf6IIJIlo-pA"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_Qn2e8LaEEeyf6IIJIlo-pA" name="" incoming="_xAgBQLaEEeyf6IIJIlo-pA _HwWdULaFEeyf6IIJIlo-pA" outgoing="_JhTdkLaFEeyf6IIJIlo-pA"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_Skw3kLaEEeyf6IIJIlo-pA" name="Kraj" incoming="_JhTdkLaFEeyf6IIJIlo-pA"/>
+  </packagedElement>
+</uml:Model>

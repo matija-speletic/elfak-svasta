@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:h="http://xmlns.jcp.org/jsf/html">
+<h:head>
+	<title>Operator</title>
+</h:head>
+<h:body>
+	<h1 style="text-align: center;">MOBILNI OPERATER</h1>
+	<hr />
+	<h2 style="text-align: center;">Ugovori</h2>
+
+	<h:form>
+		<div style="display: flex; justify-content: space-evenly;">
+			<div>
+				<h4>Izbor korisnika</h4>
+				<h:outputLabel value="ID korisnika" />
+				<div>
+					<h:inputText value="#{ugovorController.korisnikID}"></h:inputText>
+				</div>
+				<h:outputLabel value="Paket:" />
+				<div>
+					<h:selectOneListbox size="1" value="#{ugovorController.paketID}">
+						<f:selectItems value="#{ugovorController.vratiPakete()}" var="p"
+							itemValue="#{p.id}"
+							itemLabel="#{ugovorController.paketDisplay(p.id)}" />
+					</h:selectOneListbox>
+				</div>
+				<h:outputLabel value="Uredjaj:" />
+				<div>
+					<h:selectOneListbox size="1" value="#{ugovorController.uredjajID}">
+						<f:selectItems value="#{ugovorController.vratiUredjaje()}" var="p"
+							itemValue="#{p.id}"
+							itemLabel="#{ugovorController.uredjajDispString(p.id)}" />
+					</h:selectOneListbox>
+				</div>
+				
+				<div>
+					<h:commandButton value="Sklopi ugovor"
+						action="#{ugovorController.sklopiUgovorSaUredjajem(ugovorController.korisnikID,ugovorController.uredjajID,ugovorController.paketID)}"
+						style="border-radius:10px; margin-top:20px;"></h:commandButton>
+				</div>
+			</div>
+
+		</div>
+
+
+		<h:dataTable value="#{ugovorController.vratiUgovore()}" var="u"
+			styleClass="order-table" headerClass="order-table-header"
+			rowClasses="order-table-odd-row,order-table-even-row"
+			style="color:white;font-size:23px;font-weight:bold; margin-top:30px;text-shadow: 1px 1px 2px black, 0 0 15px green, 0 0 5px darkgreen; border:3px solid #a5e840; background-color:rgba(211, 239, 167,0.7);text-align:center; border-spacing: 5px; width:80%; margin-left:10%;">
+
+			<h:column>
+				<f:facet name="header">
+    				Id
+    			</f:facet>
+				<h:outputText value="#{u.id}" />
+			</h:column>
+
+			<h:column>
+				<f:facet name="header">
+    				Paket
+				</f:facet>
+				<h:outputText value="#{ugovorController.paketDisplay(u.idPaketa)}" />
+			</h:column>
+
+			<h:column>
+				<f:facet name="header">
+    				Korisnik
+				</f:facet>
+				<h:outputText value="#{ugovorController.punoIme(u.idKorisnika)}" />
+			</h:column>
+
+			<h:column>
+				<f:facet name="header">
+    				Uredjaj
+				</f:facet>
+				<h:outputText
+					value="#{ugovorController.uredjajDispString(u.idUredjaja)}" />
+			</h:column>
+
+			<h:column>
+				<f:facet name="header">
+    				Datum
+				</f:facet>
+				<h:outputText value="#{u.datum}" />
+			</h:column>
+
+		</h:dataTable>
+
+	</h:form>
+	
+	<div>
+		<h:button value="NAZAD" outcome="pocetna.xhtml" />
+	</div>
+
+</h:body>
+</html>
+

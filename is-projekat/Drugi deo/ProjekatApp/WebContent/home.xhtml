@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+	xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:h="http://xmlns.jcp.org/jsf/html">
+<h:head>
+	<title>Operator</title>
+</h:head>
+<h:body>
+	<h1 style="text-align: center;">MOBILNI OPERATER</h1>
+	<hr />
+	<h2 style="text-align: center;">Korisnici</h2>
+
+	<h:form>
+		<div style="display: flex;justify-content: space-evenly;">
+			<div>
+				<h4>Dodavanje</h4>
+				<h:outputLabel value="Ime:" />
+				<div>
+					<h:inputText value="#{korisnikController.ime}"></h:inputText>
+				</div>
+				<h:outputLabel value="Prezime:" />
+				<div>
+					<h:inputText value="#{korisnikController.prezime}">korisnik</h:inputText>
+				</div>
+				<div>
+					<h:outputLabel value="Broj:" />
+				</div>
+				<div>
+					<h:inputText value="#{korisnikController.broj}"></h:inputText>
+				</div>
+				<h:commandButton value="RegistrujKorisnika"
+					action="#{korisnikController.registrujKorisnika(korisnikController.ime, korisnikController.prezime, korisnikController.broj)}"
+					style="border-radius:10px; margin-top:20px;"></h:commandButton>
+			</div>
+			<div>
+				<h4>Uplata minuta</h4>
+				<h:outputLabel value="Minuti:" />
+				<div>
+					<h:inputText value="#{korisnikController.minuti}"></h:inputText>
+				</div>
+				<h:outputLabel value="ID korisnika:" />
+				<div>
+					<h:inputText value="#{korisnikController.id}"></h:inputText>
+				</div>
+				
+				<h:commandButton value="Dodaj minute"
+					action="#{korisnikController.dodajMinute(korisnikController.id, korisnikController.minuti)}"
+					style="border-radius:10px; margin-top:20px;"></h:commandButton>
+			</div>
+			<div>
+				<h4>Uplata poruka</h4>
+				<h:outputLabel value="Poruke:" />
+				<div>
+					<h:inputText value="#{korisnikController.poruke}"></h:inputText>
+				</div>
+				<h:outputLabel value="ID korisnika:" />
+				<div>
+					<h:inputText value="#{korisnikController.idp}"></h:inputText>
+				</div>
+				
+				<h:commandButton value="Dodaj poruke"
+					action="#{korisnikController.dodajPoruke(korisnikController.idp, korisnikController.poruke)}"
+					style="border-radius:10px; margin-top:20px;"></h:commandButton>
+			</div>
+			<div>
+				<h4>Uplata interneta</h4>
+				<h:outputLabel value="Internet:" />
+				<div>
+					<h:inputText value="#{korisnikController.internet}"></h:inputText>
+				</div>
+				<h:outputLabel value="ID korisnika:" />
+				<div>
+					<h:inputText value="#{korisnikController.idi}"></h:inputText>
+				</div>
+				
+				<h:commandButton value="Dodaj internet"
+					action="#{korisnikController.dodajInternet(korisnikController.idi, korisnikController.internet)}"
+					style="border-radius:10px; margin-top:20px;"></h:commandButton>
+			</div>
+			<div>
+				<h4>Uplata na racun</h4>
+				<h:outputLabel value="Iznos:" />
+				<div>
+					<h:inputText value="#{korisnikController.zaduzenje}"></h:inputText>
+				</div>
+				<h:outputLabel value="ID korisnika:" />
+				<div>
+					<h:inputText value="#{korisnikController.idr}"></h:inputText>
+				</div>
+				
+				<h:commandButton value="Uplati na racun"
+					action="#{korisnikController.uplataNaRacun(korisnikController.idr, korisnikController.zaduzenje)}"
+					style="border-radius:10px; margin-top:20px;"></h:commandButton>
+			</div>
+			<div>
+				<h4>Obrisi korisnika</h4>
+				<h:outputLabel value="ID korisnika:" />
+				<div>
+					<h:inputText value="#{korisnikController.ido}"></h:inputText>
+				</div>
+				
+				
+				<h:commandButton value="Obrisi korisnika"
+					action="#{korisnikController.obrisiKorisnika(korisnikController.ido)}"
+					style="border-radius:10px; margin-top:20px;"></h:commandButton>
+			</div>
+		</div>
+
+
+		<h:dataTable value="#{korisnikController.sviKorisnici()}" var="k"
+			styleClass="order-table" headerClass="order-table-header"
+			rowClasses="order-table-odd-row,order-table-even-row"
+			style="color:white;font-size:23px;font-weight:bold; margin-top:30px;text-shadow: 1px 1px 2px black, 0 0 15px green, 0 0 5px darkgreen; border:3px solid #a5e840; background-color:rgba(211, 239, 167,0.7);text-align:center; border-spacing: 5px; width:80%; margin-left:10%;">
+
+			<h:column>
+				<f:facet name="header">
+    				Id
+    			</f:facet>
+				<h:outputText value="#{k.id}" />
+			</h:column>
+
+			<h:column>
+				<f:facet name="header">
+    				Ime
+				</f:facet>
+				<h:outputText value="#{k.ime}" />
+			</h:column>
+
+			<h:column>
+				<f:facet name="header">
+    				Prezime
+				</f:facet>
+				<h:outputText value="#{k.prezime}" />
+			</h:column>
+
+
+			<h:column>
+				<f:facet name="header">
+    				Broj teleofna
+				</f:facet>
+				<h:outputText value="#{k.broj}" />
+			</h:column>
+
+			<h:column>
+				<f:facet name="header">
+    				Internet
+				</f:facet>
+				<h:outputText value="#{k.internet}" />
+			</h:column>
+
+			<h:column>
+				<f:facet name="header">
+    				Minuti
+				</f:facet>
+				<h:outputText value="#{k.minuti}" />
+			</h:column>
+
+			<h:column>
+				<f:facet name="header">
+    				Poruke
+				</f:facet>
+				<h:outputText value="#{k.poruke}" />
+			</h:column>
+
+			<h:column>
+				<f:facet name="header">
+    				Zaduzenje
+				</f:facet>
+				<h:outputText value="#{k.zaduzenje}" />
+			</h:column>
+
+		</h:dataTable>
+
+
+
+
+
+
+	</h:form>
+
+
+
+	<div>
+		<h:button  value="NAZAD" outcome="pocetna.xhtml" />
+	</div>
+
+
+</h:body>
+</html>
+
